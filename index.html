@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tutu · 专业商品图处理服务 | 让每张图都敢挂上链接</title>
+  <meta name="description" content="tutu 提供电商商品图处理服务：去背抠图、光影精修、场景合成、主图详情页合规、批量交付。专为淘宝/拼多多商家打造。" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ 顶部导航 ============ -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="#top" class="logo">tutu<span>.图</span></a>
+      <nav class="nav-links">
+        <a href="#services">服务</a>
+        <a href="#showcase">作品</a>
+        <a href="#process">流程</a>
+        <a href="#pricing">套餐</a>
+        <a href="#contact" class="nav-cta">立即下单</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="菜单">☰</button>
+    </div>
+  </header>
+
+  <!-- ============ Hero 主视觉 ============ -->
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <p class="hero-tag">电商商品图处理 · 一站式交付</p>
+      <h1>专业商品图处理<br/>让产品自己会卖货</h1>
+      <p class="hero-sub">
+        去背 · 精修 · 场景合成 · 批量交付 —— 专为淘宝 / 拼多多商家打造。<br/>
+        你只管把原图发来，上架级商品图我们搞定。
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">上传图片，免费估价</a>
+        <a href="#showcase" class="btn btn-ghost">看处理效果 →</a>
+      </div>
+      <ul class="hero-stats">
+        <li><strong>24h</strong><span>常规交付</span></li>
+        <li><strong>1000+</strong><span>单图/批次</span></li>
+        <li><strong>白底/场景</strong><span>双轨输出</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ 服务能力 ============ -->
+  <section class="section" id="services">
+    <div class="section-head">
+      <h2>我们能帮你做什么</h2>
+      <p>从一张随手拍，到一张能直接挂链接的商品图</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="card-ic">✂️</div>
+        <h3>智能去背抠图</h3>
+        <p>毛发级边缘、透明背景、纯白底，电商主图刚需一步到位。</p>
+      </div>
+      <div class="card">
+        <div class="card-ic">✨</div>
+        <h3>光影精修</h3>
+        <p>调色、去瑕疵、加质感高光，让产品更干净、更高级。</p>
+      </div>
+      <div class="card">
+        <div class="card-ic">🏞️</div>
+        <h3>场景合成</h3>
+        <p>白底图变场景图 / 模特图，营造使用氛围，提升点击转化。</p>
+      </div>
+      <div class="card">
+        <div class="card-ic">📐</div>
+        <h3>尺寸合规</h3>
+        <p>主图、详情页、直通车图按平台规范输出，上传不报错。</p>
+      </div>
+      <div class="card">
+        <div class="card-ic">📦</div>
+        <h3>批量处理</h3>
+        <p>上千 SKU 统一风格、统一交付，适合店群 / 供应链商家。</p>
+      </div>
+      <div class="card">
+        <div class="card-ic">🔁</div>
+        <h3>修改无忧</h3>
+        <p>交付后支持按反馈微调，直到你满意上架为止。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 作品 Before / After ============ -->
+  <section class="section section-alt" id="showcase">
+    <div class="section-head">
+      <h2>处理前 / 处理后</h2>
+      <p>拖动中间滑块，直观感受一张图的变化（示例占位，正式版替换为你的真实作品）</p>
+    </div>
+
+    <div class="ba-slider" id="baSlider">
+      <!-- 处理后（底层，完整显示） -->
+      <div class="ba-layer ba-after">
+        <div class="ba-photo after">
+          <span class="ba-emoji">🧴</span>
+          <span class="ba-label">处理后 · 白底精修</span>
+        </div>
+      </div>
+      <!-- 处理前（顶层，按滑块裁切显示左半部分） -->
+      <div class="ba-layer ba-before" id="baBefore">
+        <div class="ba-photo before">
+          <span class="ba-emoji">🧴</span>
+          <span class="ba-label">处理前 · 原图直出</span>
+        </div>
+      </div>
+      <div class="ba-handle" id="baHandle"></div>
+      <input type="range" min="0" max="100" value="50" id="baRange" class="ba-range" aria-label="对比滑块" />
+    </div>
+
+    <p class="ba-hint">← 拖动 →</p>
+  </section>
+
+  <!-- ============ 服务流程 ============ -->
+  <section class="section" id="process">
+    <div class="section-head">
+      <h2>四步搞定，不用操心</h2>
+      <p>把专业的事交给 tutu</p>
+    </div>
+    <div class="steps">
+      <div class="step"><span class="step-no">1</span><h3>提交原图</h3><p>微信 / 表单发来产品原始照片，说明用途与平台。</p></div>
+      <div class="step"><span class="step-no">2</span><h3>沟通需求</h3><p>确认风格：白底 or 场景、主图 or 详情、数量与工期。</p></div>
+      <div class="step"><span class="step-no">3</span><h3>精修交付</h3><p>按规范输出成品图，支持预览与修改。</p></div>
+      <div class="step"><span class="step-no">4</span><h3>上架无忧</h3><p>拿到即传，尺寸合规、画质达标，直接挂链接。</p></div>
+    </div>
+  </section>
+
+  <!-- ============ 套餐价格 ============ -->
+  <section class="section section-alt" id="pricing">
+    <div class="section-head">
+      <h2>透明套餐，按需选择</h2>
+      <p>单张试水到包月托管，总有一档适合你</p>
+    </div>
+    <div class="plans">
+      <div class="plan">
+        <h3>体验版</h3>
+        <div class="price">¥9<span>/张起</span></div>
+        <ul>
+          <li>白底去背 + 基础精修</li>
+          <li>单张或小额试单</li>
+          <li>1 次免费修改</li>
+        </ul>
+        <a href="#contact" class="btn btn-ghost">咨询下单</a>
+      </div>
+      <div class="plan plan-hot">
+        <div class="plan-badge">最受欢迎</div>
+        <h3>标准版</h3>
+        <div class="price">¥6<span>/张起</span></div>
+        <ul>
+          <li>白底 / 场景 双轨</li>
+          <li>光影精修 + 尺寸合规</li>
+          <li>3 次免费修改</li>
+          <li>10 张起订</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">咨询下单</a>
+      </div>
+      <div class="plan">
+        <h3>包月版</h3>
+        <div class="price">¥999<span>/月起</span></div>
+        <ul>
+          <li>不限量常规图</li>
+          <li>专属风格模板</li>
+          <li>优先交付 + 专属对接</li>
+          <li>适合店群 / 供应链</li>
+        </ul>
+        <a href="#contact" class="btn btn-ghost">咨询下单</a>
+      </div>
+    </div>
+    <p class="pricing-note">* 具体报价按品类、数量、复杂度浮动，最终以沟通后报价单为准。</p>
+  </section>
+
+  <!-- ============ 联系 / 下单 ============ -->
+  <section class="section" id="contact">
+    <div class="section-head">
+      <h2>把图发来，马上估价</h2>
+      <p>两种方式都能找到我们</p>
+    </div>
+    <div class="contact">
+      <div class="contact-wechat">
+        <div class="wx-qr">微信二维码<br/>占位</div>
+        <p><strong>微信：</strong>tutu_img（占位，替换为你的微信号）</p>
+        <p class="muted">加好友直接发原图，最快响应</p>
+      </div>
+      <form class="contact-form" id="orderForm">
+        <label>称呼 / 店铺名
+          <input type="text" name="name" placeholder="例如：淘宝店·优品家居" required />
+        </label>
+        <label>联系方式（微信 / 手机）
+          <input type="text" name="contact" placeholder="方便我们回复你" required />
+        </label>
+        <label>需求描述
+          <textarea name="need" rows="4" placeholder="例如：20 张护肤品瓶身白底图 + 3 张场景图，用于淘宝主图与详情页"></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary">提交需求</button>
+        <p class="form-msg" id="formMsg" hidden>✅ 已收到！我们会尽快通过你留的联系方式回复（演示站点，暂未接后端）。</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ 页脚 ============ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="logo">tutu<span>.图</span></span>
+      <p>专业电商商品图处理服务 · 让每张图都敢挂上链接</p>
+      <p class="muted">© 2026 tutu. 站内价格与作品为示例占位，正式运营前请替换为真实内容。</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
