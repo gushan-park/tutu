@@ -28,6 +28,8 @@
 | `index.html` | 页面结构。每个区块都有中文注释标出（导航 / Hero / 服务 / 对比 / 流程 / 套餐 / 联系 / 页脚） |
 | `styles.css` | 样式。墨黑 + 暖橙配色，响应式（手机自适应），含滑块与动画样式。顶部 `:root` 放了配色变量，改主题改这里 |
 | `script.js` | 交互。移动端菜单切换、Before/After 拖动滑块、表单提交反馈、平滑滚动 |
+| `robots.txt` | SEO：告诉搜索引擎可以抓取全站，并指向 sitemap |
+| `sitemap.xml` | SEO：站点地图，列出可收录页面，提交给搜索引擎用 |
 | `overview.md` | **本说明文件** |
 
 ## 四、页面板块 → 对应代码位置
@@ -41,7 +43,10 @@
 | 服务流程 | `.process` | 提交原图 → 沟通需求 → 精修交付 → 上架无忧 |
 | 套餐价格 | `.pricing` | 体验版 / 标准版（标「最受欢迎」）/ 包月版 |
 | 联系下单 | `.contact` | 微信占位 + 需求表单（演示态） |
+| 常见问题 | `#faq` | FAQ 折叠问答 + FAQPage 结构化数据（利于搜索富摘要） |
 | 页脚 | `footer` | 版权与备案占位 |
+
+> SEO 相关（上线后用于被搜索引擎收录）：`index.html` 含 `canonical`、Open Graph、JSON-LD（Service + FAQPage 结构化数据）；另有 `robots.txt` 与 `sitemap.xml`。
 
 ## 五、怎么本地预览
 
