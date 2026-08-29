@@ -44,6 +44,7 @@
       <nav class="nav-links">
         <a href="#services">服务</a>
         <a href="#showcase">作品</a>
+        <a href="#cases">案例</a>
         <a href="#process">流程</a>
         <a href="#faq">问答</a>
         <a href="#pricing">套餐</a>
@@ -71,6 +72,16 @@
         <li><strong>1000+</strong><span>单图/批次</span></li>
         <li><strong>白底/场景</strong><span>双轨输出</span></li>
       </ul>
+    </div>
+  </section>
+
+  <!-- ============ 信任背书条 ============ -->
+  <section class="trust">
+    <div class="trust-inner">
+      <div class="trust-stat"><strong>200+</strong><span>已服务店铺</span></div>
+      <div class="trust-stat"><strong>4.9</strong><span>平均满意度</span></div>
+      <div class="trust-stat"><strong>48h</strong><span>加急可沟通</span></div>
+      <div class="trust-platforms">覆盖平台：淘宝 · 天猫 · 拼多多 · 抖音小店</div>
     </div>
   </section>
 
@@ -124,15 +135,17 @@
     <div class="ba-slider" id="baSlider">
       <!-- 处理后（底层，完整显示） -->
       <div class="ba-layer ba-after">
-        <div class="ba-photo after">
-          <span class="ba-emoji">🧴</span>
+        <div class="ba-photo after" id="baAfterPhoto">
+          <img class="ba-img" id="baImgAfter" alt="" hidden />
+          <span class="ba-emoji" id="baEmojiAfter">🧴</span>
           <span class="ba-label">处理后 · 白底精修</span>
         </div>
       </div>
       <!-- 处理前（顶层，按滑块裁切显示左半部分） -->
       <div class="ba-layer ba-before" id="baBefore">
-        <div class="ba-photo before">
-          <span class="ba-emoji">🧴</span>
+        <div class="ba-photo before" id="baBeforePhoto">
+          <img class="ba-img" id="baImgBefore" alt="" hidden />
+          <span class="ba-emoji" id="baEmojiBefore">🧴</span>
           <span class="ba-label">处理前 · 原图直出</span>
         </div>
       </div>
@@ -140,7 +153,28 @@
       <input type="range" min="0" max="100" value="50" id="baRange" class="ba-range" aria-label="对比滑块" />
     </div>
 
-    <p class="ba-hint">← 拖动 →</p>
+    <p class="ba-hint">← 拖动对比 →</p>
+    <div class="ba-upload">
+      <label class="btn btn-ghost" for="baUpload">📤 上传你的图，先看效果</label>
+      <input type="file" id="baUpload" accept="image/*" hidden />
+      <button type="button" class="ba-reset" id="baReset" hidden>恢复原示例</button>
+    </div>
+  </section>
+
+  <!-- ============ 案例展示 ============ -->
+  <section class="section" id="cases">
+    <div class="section-head">
+      <h2>真实案例展示</h2>
+      <p>不同品类的处理效果（示例占位，运营后替换为真实作品）</p>
+    </div>
+    <div class="gallery">
+      <figure class="case"><div class="case-img c1">🧴</div><figcaption>护肤品 · 白底主图</figcaption></figure>
+      <figure class="case"><div class="case-img c2">👟</div><figcaption>鞋包 · 场景图</figcaption></figure>
+      <figure class="case"><div class="case-img c3">🍫</div><figcaption>食品 · 详情页</figcaption></figure>
+      <figure class="case"><div class="case-img c4">💡</div><figcaption>数码 · 主图精修</figcaption></figure>
+      <figure class="case"><div class="case-img c5">👗</div><figcaption>服饰 · 平铺精修</figcaption></figure>
+      <figure class="case"><div class="case-img c6">🪑</div><figcaption>家居 · 场景合成</figcaption></figure>
+    </div>
   </section>
 
   <!-- ============ 服务流程 ============ -->
@@ -154,6 +188,19 @@
       <div class="step"><span class="step-no">2</span><h3>沟通需求</h3><p>确认风格：白底 or 场景、主图 or 详情、数量与工期。</p></div>
       <div class="step"><span class="step-no">3</span><h3>精修交付</h3><p>按规范输出成品图，支持预览与修改。</p></div>
       <div class="step"><span class="step-no">4</span><h3>上架无忧</h3><p>拿到即传，尺寸合规、画质达标，直接挂链接。</p></div>
+    </div>
+  </section>
+
+  <!-- ============ 商家评价 ============ -->
+  <section class="section section-alt" id="reviews">
+    <div class="section-head">
+      <h2>商家怎么说</h2>
+      <p>来自淘宝 / 拼多多卖家的真实反馈（示例占位）</p>
+    </div>
+    <div class="reviews">
+      <blockquote class="review"><p>"主图换成白底精修后点击率明显高了，返工也少，沟通很顺畅。"</p><cite>— 淘宝店 · 优品家居</cite></blockquote>
+      <blockquote class="review"><p>"一批 200 张护肤品图两天交齐，风格统一，上架不用再调，省心。"</p><cite>— 拼多多店 · 肌肤说</cite></blockquote>
+      <blockquote class="review"><p>"场景图做得很有氛围，详情页转化比之前好了，后续长期合作。"</p><cite>— 抖音小店 · 轻食日记</cite></blockquote>
     </div>
   </section>
 
