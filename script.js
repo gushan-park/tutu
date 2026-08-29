@@ -26,6 +26,31 @@ if (baRange) {
   updateSlider(baRange.value); // 初始化
 }
 
+/* 2.5) 上传自己的图，先看处理前后效果（演示：用 CSS 滤镜模拟精修） */
+const baUpload = document.getElementById('baUpload');
+const baReset = document.getElementById('baReset');
+const baImgBefore = document.getElementById('baImgBefore');
+const baImgAfter = document.getElementById('baImgAfter');
+const baEmojiBefore = document.getElementById('baEmojiBefore');
+const baEmojiAfter = document.getElementById('baEmojiAfter');
+if (baUpload) {
+  baUpload.addEventListener('change', e => {
+    const file = e.target.files && e.target.files[0];
+    if (!file) return;
+    const url = URL.createObjectURL(file);
+    baImgBefore.src = baImgAfter.src = url;
+    [baImgBefore, baImgAfter].forEach(i => i.hidden = false);
+    [baEmojiBefore, baEmojiAfter].forEach(s => s.style.display = 'none');
+    baReset.hidden = false;
+  });
+  baReset.addEventListener('click', () => {
+    baImgBefore.src = baImgAfter.src = '';
+    [baImgBefore, baImgAfter].forEach(i => i.hidden = true);
+    [baEmojiBefore, baEmojiAfter].forEach(s => s.style.display = '');
+    baReset.hidden = true;
+  });
+}
+
 /* 3) 下单表单（演示：不接后端，仅本地反馈） */
 const orderForm = document.getElementById('orderForm');
 const formMsg = document.getElementById('formMsg');
