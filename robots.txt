@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gushan-park.github.io/tutu/sitemap.xml
