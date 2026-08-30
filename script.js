@@ -58,7 +58,6 @@ if (orderForm) {
   orderForm.addEventListener('submit', e => {
     e.preventDefault();
     formMsg.hidden = false;
-    orderForm.querySelector('button').textContent = '已提交 ✓';
     // 真实上线时，这里改为 fetch 到你的后端 / 表单服务
   });
 }
