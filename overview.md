@@ -33,7 +33,7 @@
 |------|------|
 | `index.html` | **英文主站（en）**。页面结构，各区块有英文注释（nav / hero / services / showcase / cases / process / reviews / global / pricing / faq / contact / footer） |
 | `zh.html` | **中文版（zh-CN）**。与英文版结构一一对应，文案为中文；两者通过导航右上角语言切换互相跳转 |
-| `styles.css` | 样式。墨黑 + 暖橙配色，响应式（手机自适应），含滑块与动画样式，以及导航里的**中英语言切换**样式（`.lang-switch`）。顶部 `:root` 放了配色变量，改主题改这里 |
+| `styles.css` | 样式。**未来感深色主题**：深空背景 + 霓虹青/紫/品红光斑 + 网格 + 玻璃拟态 + 发光（v6）。响应式（手机自适应），含 Before/After 滑块、上传预览与动画样式，以及导航中英语言切换（`.lang-switch`）。顶部 `:root` 放了配色变量；背景层用 `.bg-layer`（网格 `.bg-grid` + 三个浮动光斑 `.bg-glow`）实现。改主题改这里 |
 | `script.js` | 交互。移动端菜单切换、Before/After 拖动滑块、**上传图片预览（CSS 滤镜模拟精修）**、表单提交反馈 |
 | `robots.txt` | SEO：允许全站抓取，并指向 sitemap |
 | `sitemap.xml` | SEO：站点地图，列出两个语言页，含 `xhtml:link` 双语标注 |
@@ -110,4 +110,4 @@ python3 -m http.server 8000
 
 ---
 
-*最后更新：2026-08-30（v5：国际版定稿 —— 面向 Amazon/eBay/Shopify/Etsy 全球卖家；`index.html`=英文主站、`zh.html`=中文版，均在根目录共用样式与脚本；修正导航语言切换与双语 SEO；移除国内平台定位）*
+*最后更新：2026-08-30（v6：视觉升级为「未来感深色主题」—— 深空背景 + 霓虹光斑 + 网格 + 玻璃拟态 + 发光；为 `index.html` / `zh.html` 加入 `.bg-layer` 动态背景层；`styles.css` 全面重写为暗色玻璃拟态风格，板块、卡片、按钮、标题均带霓虹发光；中英双语与 SEO 结构保持不变）*
