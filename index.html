@@ -1,35 +1,40 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>tutu · 专业商品图处理服务 | 让每张图都敢挂上链接</title>
-  <meta name="description" content="tutu 提供电商商品图处理服务：去背抠图、光影精修、场景合成、主图详情页合规、批量交付。专为淘宝/拼多多商家打造。" />
-  <!-- SEO：规范链接 + 社交分享卡片（Open Graph） -->
+  <title>tutu · Product Image Editing for Amazon & Global Sellers | White Background, Retouching, Lifestyle</title>
+  <meta name="description" content="tutu helps Amazon, eBay, Shopify, Etsy and Walmart sellers turn raw product photos into marketplace-ready images: background removal, retouching, lifestyle compositing, platform-compliant sizes and bulk delivery. USD pricing, pay via PayPal / Wise / Stripe / USDT." />
+  <!-- SEO: canonical -->
   <link rel="canonical" href="https://gushan-park.github.io/tutu/" />
+  <!-- SEO: hreflang (tell Google this is the EN page; ZH page at /zh.html) -->
+  <link rel="alternate" hreflang="en" href="https://gushan-park.github.io/tutu/" />
+  <link rel="alternate" hreflang="zh-CN" href="https://gushan-park.github.io/tutu/zh.html" />
+  <link rel="alternate" hreflang="x-default" href="https://gushan-park.github.io/tutu/" />
+  <!-- Open Graph share card -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="tutu · 专业电商商品图处理服务" />
-  <meta property="og:description" content="去背、精修、场景合成、批量交付，让每张图都敢挂上链接。专为淘宝/拼多多商家打造。" />
+  <meta property="og:title" content="tutu · Product Image Editing for Amazon & Global Sellers" />
+  <meta property="og:description" content="Background removal, retouching, lifestyle compositing, platform-compliant sizing and bulk delivery for Amazon, eBay, Shopify, Etsy sellers." />
   <meta property="og:url" content="https://gushan-park.github.io/tutu/" />
   <meta name="twitter:card" content="summary_large_image" />
-  <!-- SEO：结构化数据（帮助搜索引擎理解这是「服务」，提升收录与富摘要） -->
+  <!-- SEO: structured data (Service + FAQPage) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "tutu 电商商品图处理服务",
-    "description": "提供商品图去背抠图、光影精修、场景合成、主图详情页尺寸合规、批量交付服务，面向淘宝/拼多多等电商平台商家。",
-    "serviceType": "电商商品图处理 / 商品图精修",
-    "areaServed": "CN",
+    "name": "tutu Product Image Editing Service",
+    "description": "Professional product image editing for Amazon, eBay, Shopify, Etsy and Walmart sellers: background removal, retouching, lifestyle compositing, platform-compliant sizing and bulk delivery.",
+    "serviceType": "E-commerce product image editing",
+    "areaServed": ["US", "GB", "DE", "FR", "JP", "AU", "CA", "SG"],
     "provider": {
       "@type": "Organization",
       "name": "tutu",
       "url": "https://gushan-park.github.io/tutu/"
     },
     "offers": [
-      {"@type": "Offer", "name": "体验版", "price": "9", "priceCurrency": "CNY", "description": "白底去背+基础精修，1 次免费修改"},
-      {"@type": "Offer", "name": "标准版", "price": "6", "priceCurrency": "CNY", "description": "白底/场景双轨，光影精修+尺寸合规，3 次免费修改，10 张起订"},
-      {"@type": "Offer", "name": "包月版", "price": "999", "priceCurrency": "CNY", "description": "不限量常规图，专属风格模板，优先交付"}
+      {"@type": "Offer", "name": "Starter", "price": "1.5", "priceCurrency": "USD", "description": "White background + basic retouch, 1 free revision"},
+      {"@type": "Offer", "name": "Standard", "price": "1.0", "priceCurrency": "USD", "description": "White + lifestyle, retouch + compliant sizing, 3 revisions, 10+ images"},
+      {"@type": "Offer", "name": "Monthly", "price": "149", "priceCurrency": "USD", "description": "Unlimited standard images, dedicated style template, priority delivery"}
     ]
   }
   </script>
@@ -37,323 +42,328 @@
 </head>
 <body>
 
-  <!-- ============ 顶部导航 ============ -->
+  <!-- ============ Top navigation ============ -->
   <header class="nav">
     <div class="nav-inner">
-      <a href="#top" class="logo">tutu<span>.图</span></a>
+      <a href="#top" class="logo">tutu<span>.pics</span></a>
       <nav class="nav-links">
-        <a href="#services">服务</a>
-        <a href="#showcase">作品</a>
-        <a href="#cases">案例</a>
-        <a href="#process">流程</a>
-        <a href="#faq">问答</a>
-        <a href="#crossborder">跨境</a>
-        <a href="#pricing">套餐</a>
-        <a href="#contact" class="nav-cta">立即下单</a>
+        <a href="#services">Services</a>
+        <a href="#showcase">Before/After</a>
+        <a href="#cases">Cases</a>
+        <a href="#process">Process</a>
+        <a href="#global">Global</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="nav-cta">Get a Quote</a>
+        <!-- language switch: EN highlighted, click 中文 to switch -->
+        <span class="lang-switch">
+          <span class="lang-on">EN</span>
+          <a href="zh.html" hreflang="zh-CN" lang="zh-CN">中文</a>
+        </span>
       </nav>
-      <button class="nav-toggle" id="navToggle" aria-label="菜单">☰</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
     </div>
   </header>
 
-  <!-- ============ Hero 主视觉 ============ -->
+  <!-- ============ Hero ============ -->
   <section class="hero" id="top">
     <div class="hero-inner">
-      <p class="hero-tag">电商商品图处理 · 一站式交付</p>
-      <h1>专业商品图处理<br/>让产品自己会卖货</h1>
+      <p class="hero-tag">Product image editing · Marketplace-ready in 24h</p>
+      <h1>Pro product images<br/>that make your listings sell</h1>
       <p class="hero-sub">
-        去背 · 精修 · 场景合成 · 批量交付 —— 专为淘宝 / 拼多多商家打造。<br/>
-        你只管把原图发来，上架级商品图我们搞定。
+        Background removal · Retouching · Lifestyle compositing · Bulk delivery — built for
+        <strong>Amazon, eBay, Shopify, Etsy &amp; Walmart</strong> sellers.<br/>
+        Send us your raw shots, we return listing-ready images that meet each platform's rules.
       </p>
       <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary">上传图片，免费估价</a>
-        <a href="#showcase" class="btn btn-ghost">看处理效果 →</a>
+        <a href="#contact" class="btn btn-primary">Upload photos, get a free quote</a>
+        <a href="#showcase" class="btn btn-ghost">See the difference →</a>
       </div>
       <ul class="hero-stats">
-        <li><strong>24h</strong><span>常规交付</span></li>
-        <li><strong>1000+</strong><span>单图/批次</span></li>
-        <li><strong>白底/场景</strong><span>双轨输出</span></li>
+        <li><strong>24h</strong><span>standard delivery</span></li>
+        <li><strong>1000+</strong><span>images / batch</span></li>
+        <li><strong>6+</strong><span>marketplaces supported</span></li>
       </ul>
     </div>
   </section>
 
-  <!-- ============ 信任背书条 ============ -->
+  <!-- ============ Trust bar ============ -->
   <section class="trust">
     <div class="trust-inner">
-      <div class="trust-stat"><strong>200+</strong><span>已服务店铺</span></div>
-      <div class="trust-stat"><strong>4.9</strong><span>平均满意度</span></div>
-      <div class="trust-stat"><strong>48h</strong><span>加急可沟通</span></div>
-      <div class="trust-platforms">覆盖平台：淘宝 · 天猫 · 拼多多 · 抖音小店</div>
+      <div class="trust-stat"><strong>200+</strong><span>stores served</span></div>
+      <div class="trust-stat"><strong>4.9</strong><span>avg. satisfaction</span></div>
+      <div class="trust-stat"><strong>USD</strong><span>transparent pricing</span></div>
+      <div class="trust-platforms">Amazon · eBay · Shopify · Etsy · Wish · Walmart</div>
     </div>
   </section>
 
-  <!-- ============ 服务能力 ============ -->
+  <!-- ============ Services ============ -->
   <section class="section" id="services">
     <div class="section-head">
-      <h2>我们能帮你做什么</h2>
-      <p>从一张随手拍，到一张能直接挂链接的商品图</p>
+      <h2>What we can do for you</h2>
+      <p>From a quick phone snapshot to a listing-ready product image</p>
     </div>
     <div class="cards">
       <div class="card">
         <div class="card-ic">✂️</div>
-        <h3>智能去背抠图</h3>
-        <p>毛发级边缘、透明背景、纯白底，电商主图刚需一步到位。</p>
+        <h3>Background Removal</h3>
+        <p>Hair-level edges, transparent or pure white background — the #1 requirement for marketplace main images.</p>
       </div>
       <div class="card">
         <div class="card-ic">✨</div>
-        <h3>光影精修</h3>
-        <p>调色、去瑕疵、加质感高光，让产品更干净、更高级。</p>
+        <h3>Retouching</h3>
+        <p>Color correction, blemish removal, premium highlights so your product looks clean and high-end.</p>
       </div>
       <div class="card">
         <div class="card-ic">🏞️</div>
-        <h3>场景合成</h3>
-        <p>白底图变场景图 / 模特图，营造使用氛围，提升点击转化。</p>
+        <h3>Lifestyle Compositing</h3>
+        <p>Turn white-background shots into lifestyle / model scenes that build desire and lift conversion.</p>
       </div>
       <div class="card">
         <div class="card-ic">📐</div>
-        <h3>尺寸合规</h3>
-        <p>主图、详情页、直通车图按平台规范输出，上传不报错。</p>
+        <h3>Platform-Compliant Sizing</h3>
+        <p>Output to each platform's spec (Amazon 1000×1000 white main image, Etsy / eBay ratios, etc.) — no upload errors.</p>
       </div>
       <div class="card">
         <div class="card-ic">📦</div>
-        <h3>批量处理</h3>
-        <p>上千 SKU 统一风格、统一交付，适合店群 / 供应链商家。</p>
+        <h3>Bulk Processing</h3>
+        <p>Thousands of SKUs in a unified style — perfect for stores, aggregators and supply-chain sellers.</p>
       </div>
       <div class="card">
-        <div class="card-ic">🔁</div>
-        <h3>修改无忧</h3>
-        <p>交付后支持按反馈微调，直到你满意上架为止。</p>
+        <div class="card-ic">🌐</div>
+        <h3>Multi-language Listings</h3>
+        <p>Infographics and detail-page visuals with EN / DE / FR / JP copy for local-market appeal.</p>
       </div>
     </div>
   </section>
 
-  <!-- ============ 作品 Before / After ============ -->
+  <!-- ============ Before / After ============ -->
   <section class="section section-alt" id="showcase">
     <div class="section-head">
-      <h2>处理前 / 处理后</h2>
-      <p>拖动中间滑块，直观感受一张图的变化（示例占位，正式版替换为你的真实作品）</p>
+      <h2>Before / After</h2>
+      <p>Drag the slider to see the change (placeholder demo — replace with your real work later)</p>
     </div>
 
     <div class="ba-slider" id="baSlider">
-      <!-- 处理后（底层，完整显示） -->
       <div class="ba-layer ba-after">
         <div class="ba-photo after" id="baAfterPhoto">
           <img class="ba-img" id="baImgAfter" alt="" hidden />
           <span class="ba-emoji" id="baEmojiAfter">🧴</span>
-          <span class="ba-label">处理后 · 白底精修</span>
+          <span class="ba-label">After · white-bg retouch</span>
         </div>
       </div>
-      <!-- 处理前（顶层，按滑块裁切显示左半部分） -->
       <div class="ba-layer ba-before" id="baBefore">
         <div class="ba-photo before" id="baBeforePhoto">
           <img class="ba-img" id="baImgBefore" alt="" hidden />
           <span class="ba-emoji" id="baEmojiBefore">🧴</span>
-          <span class="ba-label">处理前 · 原图直出</span>
+          <span class="ba-label">Before · raw shot</span>
         </div>
       </div>
       <div class="ba-handle" id="baHandle"></div>
-      <input type="range" min="0" max="100" value="50" id="baRange" class="ba-range" aria-label="对比滑块" />
+      <input type="range" min="0" max="100" value="50" id="baRange" class="ba-range" aria-label="Comparison slider" />
     </div>
 
-    <p class="ba-hint">← 拖动对比 →</p>
+    <p class="ba-hint">← drag to compare →</p>
     <div class="ba-upload">
-      <label class="btn btn-ghost" for="baUpload">📤 上传你的图，先看效果</label>
+      <label class="btn btn-ghost" for="baUpload">📤 Upload your photo to preview</label>
       <input type="file" id="baUpload" accept="image/*" hidden />
-      <button type="button" class="ba-reset" id="baReset" hidden>恢复原示例</button>
+      <button type="button" class="ba-reset" id="baReset" hidden>Reset demo</button>
     </div>
   </section>
 
-  <!-- ============ 案例展示 ============ -->
+  <!-- ============ Cases ============ -->
   <section class="section" id="cases">
     <div class="section-head">
-      <h2>真实案例展示</h2>
-      <p>不同品类的处理效果（示例占位，运营后替换为真实作品）</p>
+      <h2>Real case gallery</h2>
+      <p>Sample categories (placeholder — swap in real work before launch)</p>
     </div>
     <div class="gallery">
-      <figure class="case"><div class="case-img c1">🧴</div><figcaption>护肤品 · 白底主图</figcaption></figure>
-      <figure class="case"><div class="case-img c2">👟</div><figcaption>鞋包 · 场景图</figcaption></figure>
-      <figure class="case"><div class="case-img c3">🍫</div><figcaption>食品 · 详情页</figcaption></figure>
-      <figure class="case"><div class="case-img c4">💡</div><figcaption>数码 · 主图精修</figcaption></figure>
-      <figure class="case"><div class="case-img c5">👗</div><figcaption>服饰 · 平铺精修</figcaption></figure>
-      <figure class="case"><div class="case-img c6">🪑</div><figcaption>家居 · 场景合成</figcaption></figure>
+      <figure class="case"><div class="case-img c1">🧴</div><figcaption>Beauty · white main image</figcaption></figure>
+      <figure class="case"><div class="case-img c2">👟</div><figcaption>Shoes &amp; Bags · lifestyle</figcaption></figure>
+      <figure class="case"><div class="case-img c3">🍫</div><figcaption>Food &amp; Bev · detail page</figcaption></figure>
+      <figure class="case"><div class="case-img c4">💡</div><figcaption>Electronics · retouch</figcaption></figure>
+      <figure class="case"><div class="case-img c5">👗</div><figcaption>Apparel · flat / ghost</figcaption></figure>
+      <figure class="case"><div class="case-img c6">🪑</div><figcaption>Home · compositing</figcaption></figure>
     </div>
   </section>
 
-  <!-- ============ 服务流程 ============ -->
+  <!-- ============ Process ============ -->
   <section class="section" id="process">
     <div class="section-head">
-      <h2>四步搞定，不用操心</h2>
-      <p>把专业的事交给 tutu</p>
+      <h2>Four steps, zero hassle</h2>
+      <p>Leave the expertise to tutu</p>
     </div>
     <div class="steps">
-      <div class="step"><span class="step-no">1</span><h3>提交原图</h3><p>微信 / 表单发来产品原始照片，说明用途与平台。</p></div>
-      <div class="step"><span class="step-no">2</span><h3>沟通需求</h3><p>确认风格：白底 or 场景、主图 or 详情、数量与工期。</p></div>
-      <div class="step"><span class="step-no">3</span><h3>精修交付</h3><p>按规范输出成品图，支持预览与修改。</p></div>
-      <div class="step"><span class="step-no">4</span><h3>上架无忧</h3><p>拿到即传，尺寸合规、画质达标，直接挂链接。</p></div>
+      <div class="step"><span class="step-no">1</span><h3>Submit photos</h3><p>Send raw product shots via email / WhatsApp with your target marketplace and region.</p></div>
+      <div class="step"><span class="step-no">2</span><h3>Consult needs</h3><p>Confirm style: white vs lifestyle, main vs detail, image count and deadline.</p></div>
+      <div class="step"><span class="step-no">3</span><h3>Retouch &amp; deliver</h3><p>Output to the target platform's spec, with preview and revisions.</p></div>
+      <div class="step"><span class="step-no">4</span><h3>List with confidence</h3><p>Upload-ready, spec-compliant, high-res — list and start selling.</p></div>
     </div>
   </section>
 
-  <!-- ============ 商家评价 ============ -->
+  <!-- ============ Reviews ============ -->
   <section class="section section-alt" id="reviews">
     <div class="section-head">
-      <h2>商家怎么说</h2>
-      <p>来自淘宝 / 拼多多卖家的真实反馈（示例占位）</p>
+      <h2>What sellers say</h2>
+      <p>Feedback from Amazon / Etsy / Shopify sellers (placeholder)</p>
     </div>
     <div class="reviews">
-      <blockquote class="review"><p>"主图换成白底精修后点击率明显高了，返工也少，沟通很顺畅。"</p><cite>— 淘宝店 · 优品家居</cite></blockquote>
-      <blockquote class="review"><p>"一批 200 张护肤品图两天交齐，风格统一，上架不用再调，省心。"</p><cite>— 拼多多店 · 肌肤说</cite></blockquote>
-      <blockquote class="review"><p>"场景图做得很有氛围，详情页转化比之前好了，后续长期合作。"</p><cite>— 抖音小店 · 轻食日记</cite></blockquote>
+      <blockquote class="review"><p>"White-background main images lifted our click-through rate on Amazon US — exactly what we needed."</p><cite>— Amazon seller · Home &amp; Kitchen</cite></blockquote>
+      <blockquote class="review"><p>"200 SKU beauty images delivered in two days, consistent style. Made multi-store rollout painless."</p><cite>— Shopify seller · Beauty</cite></blockquote>
+      <blockquote class="review"><p>"Lifestyle shots look premium and our detail-page conversion improved. Now a long-term partner."</p><cite>— Etsy seller · Electronics</cite></blockquote>
     </div>
   </section>
 
-  <!-- ============ 服务跨境卖家 ============ -->
-  <section class="section section-alt" id="crossborder">
+  <!-- ============ Global sellers ============ -->
+  <section class="section section-alt" id="global">
     <div class="section-head">
-      <h2>服务跨境卖家 · 专攻东南亚 / 非洲</h2>
-      <p>在 Shopee、TikTok Shop、Lazada、Jumia、Takealot 上卖货，商品图也要「本地化」</p>
+      <h2>Serving global cross-border sellers</h2>
+      <p>Selling on Amazon, eBay, Shopify or Etsy? Your images need to be localized too.</p>
     </div>
 
     <div class="cb-grid">
-      <!-- 东南亚 -->
       <div class="cb-col">
-        <div class="cb-head"><span class="cb-flag">🌏</span><h3>东南亚市场</h3><span class="cb-platforms">Shopee · TikTok Shop · Lazada</span></div>
-        <p class="cb-pain"><strong>卖家痛点：</strong>内容电商当道，主图与短视频封面要够吸睛；各国平台尺寸规范不同；白底图 + 场景图双轨是标配。</p>
+        <div class="cb-head"><span class="cb-flag">🌎</span><h3>North America &amp; Europe</h3><span class="cb-platforms">Amazon US/EU · eBay · Etsy</span></div>
+        <p class="cb-pain"><strong>Pain points:</strong> strict main-image rules (pure white, 1000×1000, no text); lifestyle + infographic detail pages drive conversion; DE/FR/JP copy matters.</p>
         <ul class="cb-list">
-          <li>✅ 按 Shopee / TikTok Shop / Lazada 各国规范出图（主图 / 详情 / 直播封面）</li>
-          <li>✅ 白底图 + 场景图 + 短视频封面一站式交付</li>
-          <li>✅ 多语言详情页配图（英 / 泰 / 越 / 印尼语）</li>
-          <li>✅ 批量出图，适合店群 / 多站点铺货</li>
+          <li>✅ Amazon-compliant white main images (no border, no watermark)</li>
+          <li>✅ Lifestyle + infographic detail pages that convert</li>
+          <li>✅ Multi-language infographics (EN / DE / FR / JP)</li>
+          <li>✅ Bulk delivery for large catalogs</li>
         </ul>
       </div>
-      <!-- 非洲 -->
       <div class="cb-col">
-        <div class="cb-head"><span class="cb-flag">🌍</span><h3>非洲市场</h3><span class="cb-platforms">Jumia · Takealot · Konga</span></div>
-        <p class="cb-pain"><strong>卖家痛点：</strong>移动端优先（60%+ 在手机上看），图要清晰醒目；服饰 / 数码 / 家居是主力品类；买家信任靠图建立。</p>
+        <div class="cb-head"><span class="cb-flag">🌏</span><h3>Asia &amp; Emerging Markets</h3><span class="cb-platforms">Shopee · Lazada · TikTok Shop · Jumia</span></div>
+        <p class="cb-pain"><strong>Pain points:</strong> mobile-first (60%+ on phones); content-commerce needs eye-catching thumbnails; white + lifestyle both expected; French used in West Africa.</p>
         <ul class="cb-list">
-          <li>✅ 高对比、移动端友好的主图，小屏也清晰</li>
-          <li>✅ 英文 / 法文市场配图（西非多用法语）</li>
-          <li>✅ 白底 + 场景双轨，提升点击转化</li>
-          <li>✅ 批量出图，适合多 SKU 铺货</li>
+          <li>✅ High-contrast, mobile-friendly main images</li>
+          <li>✅ EN / FR copy for West-African and SE-Asian markets</li>
+          <li>✅ White + lifestyle dual-track to boost CTR</li>
+          <li>✅ Bulk output for multi-SKU stores</li>
         </ul>
       </div>
     </div>
 
     <div class="cb-pay">
-      <span>🌐 跨境收款：</span>支持 <strong>Wise / PayPal / USDT</strong> 等跨境结算方式，美元报价，避开各地本地支付壁垒。
+      <span>🌐 Cross-border payment:</span> we accept <strong>PayPal / Wise / Stripe / USDT</strong> — USD pricing, bypassing local-payment friction.
     </div>
 
     <div class="cb-cta">
-      <p>不论你在哪个平台、卖去哪个市场，把原图发来，我们按当地规范出图。</p>
-      <a href="#contact" class="btn btn-primary">跨境卖家，免费估价 →</a>
+      <p>Whatever platform or market you sell in, send us the raw shots — we deliver to local specs.</p>
+      <a href="#contact" class="btn btn-primary">Cross-border sellers, get a free quote →</a>
     </div>
   </section>
 
-  <!-- ============ 套餐价格 ============ -->
+  <!-- ============ Pricing ============ -->
   <section class="section section-alt" id="pricing">
     <div class="section-head">
-      <h2>透明套餐，按需选择</h2>
-      <p>单张试水到包月托管，总有一档适合你</p>
+      <h2>Transparent pricing, in USD</h2>
+      <p>From a single test image to a monthly retainer</p>
     </div>
     <div class="plans">
       <div class="plan">
-        <h3>体验版</h3>
-        <div class="price">¥9<span>/张起</span></div>
+        <h3>Starter</h3>
+        <div class="price">$1.5<span>/image</span></div>
         <ul>
-          <li>白底去背 + 基础精修</li>
-          <li>单张或小额试单</li>
-          <li>1 次免费修改</li>
+          <li>White-bg removal + basic retouch</li>
+          <li>Single or small batch</li>
+          <li>1 free revision</li>
         </ul>
-        <a href="#contact" class="btn btn-ghost">咨询下单</a>
+        <a href="#contact" class="btn btn-ghost">Get started</a>
       </div>
       <div class="plan plan-hot">
-        <div class="plan-badge">最受欢迎</div>
-        <h3>标准版</h3>
-        <div class="price">¥6<span>/张起</span></div>
+        <div class="plan-badge">Most popular</div>
+        <h3>Standard</h3>
+        <div class="price">$1.0<span>/image</span></div>
         <ul>
-          <li>白底 / 场景 双轨</li>
-          <li>光影精修 + 尺寸合规</li>
-          <li>3 次免费修改</li>
-          <li>10 张起订</li>
+          <li>White + lifestyle dual-track</li>
+          <li>Retouch + compliant sizing</li>
+          <li>3 free revisions</li>
+          <li>10+ images</li>
         </ul>
-        <a href="#contact" class="btn btn-primary">咨询下单</a>
+        <a href="#contact" class="btn btn-primary">Get started</a>
       </div>
       <div class="plan">
-        <h3>包月版</h3>
-        <div class="price">¥999<span>/月起</span></div>
+        <h3>Monthly</h3>
+        <div class="price">$149<span>/month</span></div>
         <ul>
-          <li>不限量常规图</li>
-          <li>专属风格模板</li>
-          <li>优先交付 + 专属对接</li>
-          <li>适合店群 / 供应链</li>
+          <li>Unlimited standard images</li>
+          <li>Dedicated style template</li>
+          <li>Priority delivery + dedicated contact</li>
+          <li>For stores &amp; supply chains</li>
         </ul>
-        <a href="#contact" class="btn btn-ghost">咨询下单</a>
+        <a href="#contact" class="btn btn-ghost">Get started</a>
       </div>
     </div>
-    <p class="pricing-note">* 具体报价按品类、数量、复杂度浮动，最终以沟通后报价单为准。</p>
+    <p class="pricing-note">* Final price varies by category, volume and complexity. USD settlement via PayPal / Wise / Stripe / USDT.</p>
   </section>
 
-  <!-- ============ 联系 / 下单 ============ -->
+  <!-- ============ Contact ============ -->
   <section class="section" id="contact">
     <div class="section-head">
-      <h2>把图发来，马上估价</h2>
-      <p>两种方式都能找到我们</p>
+      <h2>Send photos, get a quote now</h2>
+      <p>Three ways to reach us</p>
     </div>
     <div class="contact">
       <div class="contact-wechat">
-        <div class="wx-qr">微信二维码<br/>占位</div>
-        <p><strong>微信：</strong>tutu_img（占位，替换为你的微信号）</p>
-        <p class="muted">加好友直接发原图，最快响应</p>
+        <div class="wx-qr">QR placeholder</div>
+        <p><strong>Email:</strong> hello@tutupics.com (placeholder)</p>
+        <p><strong>WhatsApp:</strong> +1 ___ ___ ____ (placeholder)</p>
+        <p><strong>Payments:</strong> PayPal / Wise / Stripe / USDT</p>
+        <p class="muted">Send raw shots + target marketplace for fastest response</p>
       </div>
       <form class="contact-form" id="orderForm">
-        <label>称呼 / 店铺名
-          <input type="text" name="name" placeholder="例如：淘宝店·优品家居" required />
+        <label>Name / Store name
+          <input type="text" name="name" placeholder="e.g. Amazon US · Home store" required />
         </label>
-        <label>联系方式（微信 / 手机）
-          <input type="text" name="contact" placeholder="方便我们回复你" required />
+        <label>Contact (email / WhatsApp)
+          <input type="text" name="contact" placeholder="How we can reach you" required />
         </label>
-        <label>需求描述
-          <textarea name="need" rows="4" placeholder="例如：20 张护肤品瓶身白底图 + 3 张场景图，用于淘宝主图与详情页"></textarea>
+        <label>What do you need?
+          <textarea name="need" rows="4" placeholder="e.g. 20 white-bg beauty images + 3 lifestyle shots for Amazon US main & detail pages"></textarea>
         </label>
-        <button type="submit" class="btn btn-primary">提交需求</button>
-        <p class="form-msg" id="formMsg" hidden>✅ 已收到！我们会尽快通过你留的联系方式回复（演示站点，暂未接后端）。</p>
+        <button type="submit" class="btn btn-primary">Submit request</button>
+        <p class="form-msg" id="formMsg" hidden>✅ Received! We'll reply via your contact shortly (demo site — backend not connected yet).</p>
       </form>
     </div>
   </section>
 
-  <!-- ============ 常见问题 FAQ ============ -->
+  <!-- ============ FAQ ============ -->
   <section class="section" id="faq">
     <div class="section-head">
-      <h2>常见问题</h2>
-      <p>下单前你可能想知道的</p>
+      <h2>FAQ</h2>
+      <p>Before you order</p>
     </div>
     <div class="faq">
-      <details class="faq-item"><summary>商品图处理一般多久交付？</summary><p>常规订单 24 小时内交付；大批量或复杂场景图可沟通排期，我们会给明确工期。</p></details>
-      <details class="faq-item"><summary>处理一张图多少钱？</summary><p>体验版 ¥9/张起，标准版 ¥6/张起，包月版 ¥999/月起。具体按品类、数量、复杂度浮动，以沟通后报价单为准。</p></details>
-      <details class="faq-item"><summary>原图有什么要求吗？</summary><p>手机拍、平铺拍都可以，越清晰越好。去背、调光、修瑕疵都交给我们，你只管发原图。</p></details>
-      <details class="faq-item"><summary>支持哪些电商平台？</summary><p>淘宝、天猫、拼多多、抖音小店等，按各平台主图 / 详情页 / 直通车图规范输出，上传不报错。</p></details>
-      <details class="faq-item"><summary>我的产品图会泄露吗？</summary><p>我们重视商家素材保密，交付确认后按约定删除源文件，不对外留存、不用于展示（除非你授权）。</p></details>
+      <details class="faq-item"><summary>How long does editing take?</summary><p>Standard orders deliver within 24h. Large batches or complex lifestyle work get a clear timeline up front.</p></details>
+      <details class="faq-item"><summary>How much per image?</summary><p>Starter from $1.5/image, Standard from $1.0/image (10+), Monthly from $149/mo. Final price varies by category, volume and complexity.</p></details>
+      <details class="faq-item"><summary>What payment methods?</summary><p>Flat USD pricing, paid via PayPal, Wise, Stripe or USDT — avoiding local-payment friction across markets.</p></details>
+      <details class="faq-item"><summary>Which platforms do you support?</summary><p>Amazon, eBay, Shopify, Etsy, Wish, Walmart and major regional platforms — output to each one's main/detail image spec.</p></details>
+      <details class="faq-item"><summary>Any requirements for the source photo?</summary><p>Phone or flat-lay shots are fine, the clearer the better. Leave background, lighting and retouching to us.</p></details>
+      <details class="faq-item"><summary>Will my product photos leak?</summary><p>We respect seller confidentiality: source files are deleted on request after delivery and never reused publicly without permission.</p></details>
     </div>
-    <!-- SEO：FAQ 结构化数据，帮助搜索引擎出「富摘要」 -->
     <script type="application/ld+json">
     {
       "@context":"https://schema.org",
       "@type":"FAQPage",
       "mainEntity":[
-        {"@type":"Question","name":"商品图处理一般多久交付？","acceptedAnswer":{"@type":"Answer","text":"常规订单 24 小时内交付；大批量或复杂场景图可沟通排期。"}},
-        {"@type":"Question","name":"处理一张图多少钱？","acceptedAnswer":{"@type":"Answer","text":"体验版 9 元/张起，标准版 6 元/张起，包月版 999 元/月起。具体按品类、数量、复杂度浮动。"}},
-        {"@type":"Question","name":"原图有什么要求吗？","acceptedAnswer":{"@type":"Answer","text":"手机拍、平铺拍都可以，越清晰越好。去背、调光、修瑕疵都交给我们。"}},
-        {"@type":"Question","name":"支持哪些电商平台？","acceptedAnswer":{"@type":"Answer","text":"淘宝、天猫、拼多多、抖音小店等，按各平台主图、详情页、直通车图规范输出。"}},
-        {"@type":"Question","name":"我的产品图会泄露吗？","acceptedAnswer":{"@type":"Answer","text":"我们重视商家素材保密，交付确认后按约定删除源文件，不对外留存。"}}
+        {"@type":"Question","name":"How long does editing take?","acceptedAnswer":{"@type":"Answer","text":"Standard orders deliver within 24 hours. Large batches get a clear timeline."}},
+        {"@type":"Question","name":"How much per image?","acceptedAnswer":{"@type":"Answer","text":"Starter from 1.5 USD per image, Standard from 1.0 USD (10+), Monthly from 149 USD per month."}},
+        {"@type":"Question","name":"What payment methods?","acceptedAnswer":{"@type":"Answer","text":"Flat USD pricing via PayPal, Wise, Stripe or USDT."}},
+        {"@type":"Question","name":"Which platforms do you support?","acceptedAnswer":{"@type":"Answer","text":"Amazon, eBay, Shopify, Etsy, Wish, Walmart and major regional platforms."}},
+        {"@type":"Question","name":"Any requirements for the source photo?","acceptedAnswer":{"@type":"Answer","text":"Phone or flat-lay shots are fine. Leave background and lighting to us."}},
+        {"@type":"Question","name":"Will my product photos leak?","acceptedAnswer":{"@type":"Answer","text":"Source files are deleted on request after delivery and never reused publicly without permission."}}
       ]
     }
     </script>
   </section>
 
-  <!-- ============ 页脚 ============ -->
+  <!-- ============ Footer ============ -->
   <footer class="footer">
     <div class="footer-inner">
-      <span class="logo">tutu<span>.图</span></span>
-      <p>专业电商商品图处理服务 · 让每张图都敢挂上链接</p>
-      <p class="muted">© 2026 tutu. 站内价格与作品为示例占位，正式运营前请替换为真实内容。</p>
+      <span class="logo">tutu<span>.pics</span></span>
+      <p>Product image editing for Amazon &amp; global sellers · make every image listing-ready</p>
+      <p class="muted">© 2026 tutu. Prices and samples are placeholders — replace with real content before launch.</p>
     </div>
   </footer>
 
